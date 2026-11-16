@@ -1,0 +1,52 @@
+{
+	"name": "pi-footer-hint",
+	"version": "0.1.0",
+	"description": "Pi extension: names an unnamed session from the first thing you said. Pi draws that name at the end of the footer's path line and lists it in /resume.",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"pi",
+		"session",
+		"session-name",
+		"auto-name",
+		"footer",
+		"status-bar",
+		"first-message",
+		"prompt",
+		"resume"
+	],
+	"license": "MIT",
+	"author": "Kory Schluter",
+	"homepage": "https://github.com/kschluter/pi-footer-hint#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kschluter/pi-footer-hint.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kschluter/pi-footer-hint/issues"
+	},
+	"type": "module",
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"files": [
+		"src/",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"test": "node --test test/*.test.mjs",
+		"prepublishOnly": "node scripts/prepublish.mjs"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		}
+	}
+}
